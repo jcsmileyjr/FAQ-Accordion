@@ -30,19 +30,18 @@
       justify-content: center;
       align-items: center;
       margin: 0;
+      background-color: gray;
     }
 
     main {
       display: flex;
       width: 80%;
+      height: 70%;
+      background-color: white;
     }
 
-    .artwork {
+    .artwork, .content {
       flex: 1;
-    }
-
-    .content {
-      flex:1;
     }
 
     @media only screen and (max-width: 380px) {
@@ -59,7 +58,11 @@
 <body>
   <main>
     <section class="artwork">
-      artwork
+      <picture>
+        <source srcset="./images/illustration-woman-online-desktop.svg" media="(min-width: 381px)">
+        <source srcset="./images/illustration-woman-online-mobile.svg" media="(max-width:380px)">
+        <img src="./images/illustration-box-desktop.svg" alt="">
+      </picture>
     </section>
     <section class="content">
       How many team members can I invite?
