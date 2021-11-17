@@ -36,12 +36,40 @@
     main {
       display: flex;
       width: 80%;
-      height: 70%;
+      height: 85%;
       background-color: white;
+      border-radius: 20px;
+    }
+
+    h1 {
+      text-align: center;
     }
 
     .artwork, .content {
       flex: 1;
+    }
+
+    .content {
+      margin: 0 20px;
+    }
+
+    .content__info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .content__info--click {
+      height: 6px;
+    }
+
+    .content__summary--hide {
+      display: none;
+    }
+
+    .content__summary--show {
+      display: block;
     }
 
     @media only screen and (max-width: 380px) {
@@ -65,24 +93,64 @@
       </picture>
     </section>
     <section class="content">
-      How many team members can I invite?
-      You can invite up to 2 additional users on the Free plan. There is no limit on 
-      team members for the Premium plan.
-    
-      What is the maximum file upload size?
-      No more than 2GB. All files in your account must fit your allotted storage space.
-    
-      How do I reset my password?
-      Click “Forgot password” from the login page or “Change password” from your profile page.
-      A reset link will be emailed to you.
-    
-      Can I cancel my subscription?
-      Yes! Send us a message and we’ll process your request no questions asked.
-    
-      Do you provide additional support?
-      Chat and email support is available 24/7. Phone lines are open during normal business hours.
+      <h1>FAQ</h1>
+      <div>
+        <div class="content__info" id="content__info--invite" onclick="clickInvite('content__summary--invite', 'openInvite')"> 
+          <p class="content__info--collapse">How many team members can I invite?</p><img src="./images/icon-arrow-down.svg" class="content__info--click" alt="click to show more content" />
+        </div>
+        <div class="content__summary--hide" id="content__summary--invite">
+          <p class="content__summary">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+        </div>
+      </div>
+      <div>
+        <div class="content__info" id="content__info--maxSize" onclick="clickInvite('content__summary--maxSize', 'openMaxFileSize')">
+          <p class="content__info--collapse">What is the maximum file upload size?</p><img src="./images/icon-arrow-down.svg" class="content__info--click" alt="click to show more content" />
+        </div>
+        <div class="content__summary--hide" id="content__summary--maxSize">
+          <p class="content__summary">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+        </div>
+      </div>
+      <div>
+        <div class="content__info" id="content__info--resetPwd" onclick="clickInvite('content__summary--resetPwd', 'openResetPwd')">
+          <p class="content__info--collapse">How do I reset my password?</p><img src="./images/icon-arrow-down.svg" class="content__info--click" alt="click to show more content" />
+        </div>
+        <div class="content__summary--hide" id="content__summary--resetPwd">
+          <p class="content__summary">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
+        </div>
+      </div>
+      <div>
+        <div class="content__info" id="content__info--cancel" onclick="clickInvite('content__summary--cancel', 'openCancel')">
+          <p class="content__info--collapse">Can I cancel my subscription?</p><img src="./images/icon-arrow-down.svg" class="content__info--click" alt="click to show more content" />
+        </div>
+        <div class="content__summary--hide" id="content__summary--cancel">
+          <p class="content__summary">Yes! Send us a message and we’ll process your request no questions asked.</p>
+        </div>
+      </div>
+      <div>
+        <div class="content__info" id="content__info--support" onclick="clickInvite('content__summary--support', 'openSupport')">
+          <p class="content__info--collapse">Do you provide additional support?</p><img src="./images/icon-arrow-down.svg" class="content__info--click" alt="click to show more content" />
+        </div>
+        <div class="content__summary--hide" id="content__summary--support">
+          <p class="content__summary">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+        </div>
+      </div>
     </section>
   </main>
-
+  <script>  
+    let ifOpenArray = {"openInvite":false, "openMaxFileSize":false, "openResetPwd":false, "openCancel": false, "openSupport": false}
+    const clickInvite = (elementToOpen, ifOpenName) => {
+      let shouldOpen = ifOpenArray[ifOpenName];
+      if(!shouldOpen){
+        document.getElementById(elementToOpen).classList.remove("content__summary--hide");
+        document.getElementById(elementToOpen).classList.add("content__summary--show");
+        ifOpenArray[ifOpenName] = true;
+      }else{
+        document.getElementById(elementToOpen).classList.remove("content__summary--show");         
+        document.getElementById(elementToOpen).classList.add("content__summary--hide");
+        ifOpenArray[ifOpenName] = false;
+      }
+    }
+  
+  </script>
 </body>
 </html>
