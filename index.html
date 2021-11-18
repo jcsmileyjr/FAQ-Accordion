@@ -44,6 +44,7 @@
     h1 {
       text-align: center;
       margin-top: 100px;
+      font-weight: 700;
     }
 
     .artwork, .content {
@@ -55,6 +56,30 @@
       flex-direction: column;
       position: relative;
       align-items: center;
+    }
+
+    .artwork__image--topStyle {
+      width: 90%;
+    }
+
+    .artwork__image--top {
+      position: absolute;
+      top: 95px;
+      left: -88px;
+    }
+
+    .artwork__image--bottomStyle {
+      width: 85%;
+    }
+
+
+    .artwork__image--bottom {
+      position: absolute;
+      top: 0px;
+    }
+
+    picture {
+      text-align: center;
     }
 
     .content {
@@ -95,27 +120,6 @@
       border-bottom-style: solid;
     }
 
-    .artwork__image--topStyle {
-      width: 70%;
-    }
-
-    .artwork__image--bottomStyle {
-      width: 85%;
-    }
-
-    .artwork__image--top {
-      position: absolute;
-      top: -95px;
-    }
-
-    .artwork__image--bottom {
-      position: absolute;
-      top: 0px;
-    }
-
-    picture {
-      text-align: center;
-    }
 
     @media only screen and (max-width: 380px) {
       main {
@@ -123,6 +127,25 @@
       }
       .content{
         flex: 4;
+      }
+
+      .artwork__image--topStyle {
+        width: 70%;
+      }
+
+      .artwork__image--top {
+        position: absolute;
+        top: -95px;
+        left: 0px;
+      }
+
+      .artwork__image--bottomStyle {
+        width: 85%;
+      }
+
+      .artwork__image--bottom {
+        position: absolute;
+        top: 0px;
       }
     }
 
