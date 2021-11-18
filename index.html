@@ -49,6 +49,13 @@
       flex: 1;
     }
 
+    .artwork {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      align-items: center;
+    }
+
     .content {
       margin: 0 20px;
     }
@@ -87,6 +94,28 @@
       border-bottom-style: solid;
     }
 
+    .artwork__image--topStyle {
+      width: 70%;
+    }
+
+    .artwork__image--bottomStyle {
+      width: 85%;
+    }
+
+    .artwork__image--top {
+      position: absolute;
+      top: -95px;
+    }
+
+    .artwork__image--bottom {
+      position: absolute;
+      top: 0px;
+    }
+
+    picture {
+      text-align: center;
+    }
+
     @media only screen and (max-width: 380px) {
       main {
         flex-direction: column;
@@ -101,10 +130,15 @@
 <body>
   <main>
     <section class="artwork">
-      <picture>
+      <picture class="artwork__image--top">
         <source srcset="./images/illustration-woman-online-desktop.svg" media="(min-width: 381px)">
         <source srcset="./images/illustration-woman-online-mobile.svg" media="(max-width:380px)">
-        <img src="./images/illustration-box-desktop.svg" alt="">
+        <img class="artwork__image--topStyle" src="./images/illustration-box-desktop.svg" alt="">
+      </picture>
+      <picture class="artwork__image--bottom">
+        <source srcset="./images/bg-pattern-desktop.svg" media="(min-width: 381px)">
+        <source srcset="./images/bg-pattern-mobile.svg" media="(max-width:380px)">
+        <img class="artwork__image--bottomStyle" src="./images/illustration-box-desktop.svg" alt="">
       </picture>
     </section>
     <section class="content">
