@@ -63,8 +63,20 @@
     }
 
     .artwork__image--top {
+      z-index: 50;
       position: absolute;
       top: 95px;
+      left: -88px;
+    }
+
+    .artwork__image--middleStyle{
+      width: 100%;
+    }
+
+    .artwork__image--middle {
+      z-index: 100;
+      position: absolute;
+      top: 208px;
       left: -88px;
     }
 
@@ -76,6 +88,12 @@
     .artwork__image--bottom {
       position: absolute;
       top: 0px;
+      /* top: -74px;
+      right: 132px;
+      left: -380px; */
+      top: -6vw;
+      right: 10vw;
+      left: -27vw;
     }
 
     picture {
@@ -140,12 +158,18 @@
       }
 
       .artwork__image--bottomStyle {
-        width: 85%;
+        width: 70%;
       }
 
       .artwork__image--bottom {
         position: absolute;
         top: 0px;
+        right: 0;
+        left: 0;    
+      }
+
+      .artwork__image--middle {
+        display: none;
       }
     }
 
@@ -158,6 +182,10 @@
         <source srcset="./images/illustration-woman-online-desktop.svg" media="(min-width: 381px)">
         <source srcset="./images/illustration-woman-online-mobile.svg" media="(max-width:380px)">
         <img class="artwork__image--topStyle" src="./images/illustration-box-desktop.svg" alt="">
+      </picture>
+      <picture class="artwork__image--middle">
+        <source srcset="./images/illustration-box-desktop.svg" media="(min-width: 381px)">
+        <img class="artwork__image--middleStyle" src="./images/illustration-box-desktop.svg" alt="">
       </picture>
       <picture class="artwork__image--bottom">
         <source srcset="./images/bg-pattern-desktop.svg" media="(min-width: 381px)">
