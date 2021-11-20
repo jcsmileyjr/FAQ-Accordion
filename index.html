@@ -35,16 +35,14 @@
 
     main {
       display: flex;
-      width: 65%;
-      min-height: 65%;
+      width: 40%;
+      min-height:40%;
       background-color: white;
       border-radius: 20px;
     }
 
     h1 {
-      text-align: center;
-      margin-top: 100px;
-      font-weight: 700;
+      margin-top: 50px;
     }
 
     .artwork, .content {
@@ -60,25 +58,25 @@
     }
 
     .artwork__image--topStyle {
-      width: 90%;
+      width: 95%;
     }
 
     .artwork__image--top {
       z-index: 50;
       position: absolute;
-      top: 95px;
-      left: -88px;
+      top: 50px;
+      left: -50px;
     }
 
     .artwork__image--middleStyle{
-      width: 100%;
+      width: 80%;
     }
 
     .artwork__image--middle {
       z-index: 100;
       position: absolute;
-      top: 355px;
-      left: 160px;
+      top: 393px;
+      left: 338px;
     }
 
     .artwork__image--bottomStyle {
@@ -88,9 +86,9 @@
 
     .artwork__image--bottom {
       position: absolute;
-      top: -293px;
-      right: 128px;
-      left: -600px;
+      top: -228px;
+      right: 49px;
+      left: -481px; 
     }
 
     picture {
@@ -148,9 +146,18 @@
       main {
         flex-direction: column;
         width: 85%;
+        min-height: 65%;
       }
       .content{
         flex: 4;
+      }
+
+      h1 {
+        margin-top: 75px;
+      }
+
+      .artwork {
+        overflow: visible;
       }
 
       .artwork__image--topStyle {
@@ -159,7 +166,7 @@
 
       .artwork__image--top {
         position: absolute;
-        top: -95px;
+        top: -96px;
         left: 0px;
       }
 
@@ -170,7 +177,7 @@
       .artwork__image--bottom {
         position: absolute;
         top: 0px;
-        right: 0;
+        right: 16px;
         left: 0;    
       }
 
