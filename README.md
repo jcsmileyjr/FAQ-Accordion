@@ -1,15 +1,15 @@
 # FAQ Accordion component with HTML, CSS, & JS
 ![Image of designs vs what was built](./images/final-artwork-total-1.png)
 
-This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [FAQ Accordion component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
-- [The challenge](#the-challenge)
-- [Links](#links)
-- [Built with](#built-with)
-- [What I learned](#what-i-learned)
-- [Useful resources](#useful-resources)
-- [Author](#author)
+[The challenge](#the-challenge)
+[Links](#links)
+[Built with](#built-with)
+[What I learned](#what-i-learned)
+[Useful resources](#useful-resources)
+[Author](#author)
 
 ### The challenge
 
