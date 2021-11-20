@@ -19,8 +19,8 @@ This is a solution to the [FAQ Accordion component challenge on Frontend Mentor]
 
 ### Links
 
-- [Live Site URL](https://jcsmileyjr.github.io/Profile-card-component/)
-- [Read the blog post](https://dev.to/jcsmileyjr/frontend-challenge-4-profile-card-component-46b9)
+- [Live Site URL](https://jcsmileyjr.github.io/FAQ-Accordion/)
+- [Read the blog post](https://dev.to/jcsmileyjr/frontend-challenge-5-faq-accordion-21p9)
 
 ### Built with
 
