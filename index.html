@@ -56,6 +56,7 @@
       flex-direction: column;
       position: relative;
       align-items: center;
+      overflow: hidden;
     }
 
     .artwork__image--topStyle {
@@ -76,8 +77,8 @@
     .artwork__image--middle {
       z-index: 100;
       position: absolute;
-      top: 208px;
-      left: -88px;
+      top: 355px;
+      left: 160px;
     }
 
     .artwork__image--bottomStyle {
@@ -105,6 +106,10 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+    }
+
+    .content__info--collapse:hover {
+      color: var(--Primary-Red-text)
     }
 
     .content__info--click {
@@ -188,16 +193,16 @@
         <source srcset="./images/illustration-woman-online-mobile.svg" media="(max-width:380px)">
         <img class="artwork__image--topStyle" src="./images/illustration-box-desktop.svg" alt="">
       </picture>
-      <picture class="artwork__image--middle">
-        <source srcset="./images/illustration-box-desktop.svg" media="(min-width: 381px)">
-        <img class="artwork__image--middleStyle" src="./images/illustration-box-desktop.svg" alt="">
-      </picture>
       <picture class="artwork__image--bottom">
         <source srcset="./images/bg-pattern-desktop.svg" media="(min-width: 381px)">
         <source srcset="./images/bg-pattern-mobile.svg" media="(max-width:380px)">
         <img class="artwork__image--bottomStyle" src="./images/illustration-box-desktop.svg" alt="">
       </picture>
     </section>
+    <picture class="artwork__image--middle">
+      <source srcset="./images/illustration-box-desktop.svg" media="(min-width: 381px)">
+      <img class="artwork__image--middleStyle" src="./images/illustration-box-desktop.svg" alt="">
+    </picture>
     <section class="content">
       <h1 class="content__summary--highlight content__header">FAQ</h1>
       <div class="content--separator">
