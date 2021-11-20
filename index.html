@@ -142,6 +142,19 @@
       border-bottom-style: solid;
     }
 
+    .content__info--button {
+      border: none;
+      background-color: transparent;
+      margin: 12px 0;
+      padding:0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      font-family: 'Kumbh Sans', sans-serif;
+    }
+
 
     @media only screen and (max-width: 380px) {
       main {
@@ -214,42 +227,47 @@
     <section class="content">
       <h1 class="content__summary--highlight content__header">FAQ</h1>
       <div class="content--separator">
-        <div class="content__info" id="content__info--invite" onclick="clickInvite('content__summary--invite', 'openInvite', 'content__info--invite', 'image__invite--rotate')"> 
-          <p class="content__info--collapse">How many team members can I invite?</p><img src="./images/icon-arrow-down.svg" id="image__invite--rotate" class="content__info--click" alt="click to show more content" />
-        </div>
-        <div class="content__summary--hide" id="content__summary--invite">
+        <button aria-expanded="false" role="button" class="content__info--button" id="content__info--invite" onclick="clickInvite('content__summary--invite', 'openInvite', 'content__info--invite', 'image__invite--rotate')"> 
+          <label for="content__info-invite" class="content__info--collapse">How many team members can I invite?</label>
+          <img src="./images/icon-arrow-down.svg" id="image__invite--rotate" class="content__info--click" alt="" />
+        </button>
+        <div role="region" aria-labelledby="content__info--invite" class="content__summary--hide" id="content__summary--invite">
           <p class="content__summary">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
         </div>
       </div>
       <div class="content--separator">
-        <div class="content__info" id="content__info--maxSize" onclick="clickInvite('content__summary--maxSize', 'openMaxFileSize','content__info--maxSize', 'image__maxSize--rotate')">
-          <p class="content__info--collapse">What is the maximum file upload size?</p><img src="./images/icon-arrow-down.svg" id="image__maxSize--rotate" class="content__info--click" alt="click to show more content" />
-        </div>
-        <div class="content__summary--hide" id="content__summary--maxSize">
+        <button aria-expanded="false" role="button" class="content__info--button" class="content__info" id="content__info--maxSize" onclick="clickInvite('content__summary--maxSize', 'openMaxFileSize','content__info--maxSize', 'image__maxSize--rotate')">
+          <label for="content__info--maxSize" class="content__info--collapse">What is the maximum file upload size?</label>
+          <img src="./images/icon-arrow-down.svg" id="image__maxSize--rotate" class="content__info--click" alt="" />
+        </button>
+        <div role="region" aria-labelledby="content__info--maxSize" class="content__summary--hide" id="content__summary--maxSize">
           <p class="content__summary">No more than 2GB. All files in your account must fit your allotted storage space.</p>
         </div>
       </div>
       <div class="content--separator">
-        <div class="content__info" id="content__info--resetPwd" onclick="clickInvite('content__summary--resetPwd', 'openResetPwd', 'content__info--resetPwd')">
-          <p class="content__info--collapse">How do I reset my password?</p><img src="./images/icon-arrow-down.svg" id="image__resetPwd--rotate" class="content__info--click" alt="click to show more content" />
-        </div>
-        <div class="content__summary--hide" id="content__summary--resetPwd">
+        <button aria-expanded="false" role="button" class="content__info--button" id="content__info--resetPwd" onclick="clickInvite('content__summary--resetPwd', 'openResetPwd', 'content__info--resetPwd')">
+          <label for="content__info--resetPwd" class="content__info--collapse">How do I reset my password?</label>
+          <img src="./images/icon-arrow-down.svg" id="image__resetPwd--rotate" class="content__info--click" alt="" />
+        </button>
+        <div role="region" aria-labelledby="content__info--resetPwd" class="content__summary--hide" id="content__summary--resetPwd">
           <p class="content__summary">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
         </div>
       </div>
       <div class="content--separator">
-        <div class="content__info" id="content__info--cancel" onclick="clickInvite('content__summary--cancel', 'openCancel', 'content__info--cancel', 'image__cancel--rotate')">
-          <p class="content__info--collapse">Can I cancel my subscription?</p><img src="./images/icon-arrow-down.svg" id="image__cancel--rotate" class="content__info--click" alt="click to show more content" />
-        </div>
-        <div class="content__summary--hide" id="content__summary--cancel">
+        <button aria-expanded="false" role="button" class="content__info--button" id="content__info--cancel" onclick="clickInvite('content__summary--cancel', 'openCancel', 'content__info--cancel', 'image__cancel--rotate')">
+          <label for="content__info--cancel" class="content__info--collapse">Can I cancel my subscription?</label>
+          <img src="./images/icon-arrow-down.svg" id="image__cancel--rotate" class="content__info--click" alt="" />
+        </button>
+        <div role="region" aria-labelledby="content__info--cancel" class="content__summary--hide" id="content__summary--cancel">
           <p class="content__summary">Yes! Send us a message and we’ll process your request no questions asked.</p>
         </div>
       </div>
       <div class="content--separator">
-        <div class="content__info" id="content__info--support" onclick="clickInvite('content__summary--support', 'openSupport', 'content__info--support', 'image__support--rotate')">
-          <p class="content__info--collapse">Do you provide additional support?</p><img src="./images/icon-arrow-down.svg" id="image__support--rotate" class="content__info--click" alt="click to show more content" />
-        </div>
-        <div class="content__summary--hide" id="content__summary--support">
+        <button aria-expanded="false" role="button" class="content__info--button" id="content__info--support" onclick="clickInvite('content__summary--support', 'openSupport', 'content__info--support', 'image__support--rotate')">
+          <label for="content__info--support" class="content__info--collapse">Do you provide additional support?</label>
+          <img src="./images/icon-arrow-down.svg" id="image__support--rotate" class="content__info--click" alt="" />
+        </button>
+        <div role="region" aria-labelledby="content__info--support" class="content__summary--hide" id="content__summary--support">
           <p class="content__summary">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
         </div>
       </div>
