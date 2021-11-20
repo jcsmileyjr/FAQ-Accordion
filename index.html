@@ -30,12 +30,12 @@
       justify-content: center;
       align-items: center;
       margin: 0;
-      background-color: gray;
+      background-image: linear-gradient(var(--Violet-Background), var(--Blue-Background));
     }
 
     main {
       display: flex;
-      width: 80%;
+      width: 65%;
       min-height: 65%;
       background-color: white;
       border-radius: 20px;
@@ -81,19 +81,15 @@
     }
 
     .artwork__image--bottomStyle {
-      width: 85%;
+      width: 105%;
     }
 
 
     .artwork__image--bottom {
       position: absolute;
-      top: 0px;
-      /* top: -74px;
-      right: 132px;
-      left: -380px; */
-      top: -6vw;
-      right: 10vw;
-      left: -27vw;
+      top: -293px;
+      right: 128px;
+      left: -600px;
     }
 
     picture {
@@ -127,6 +123,10 @@
       color: var(--Primary-Blue-text);
       font-weight: 700;
     }
+    
+    .content__header {
+      text-align: left;      
+    }
 
     .content__summary--rotate {
       transform: rotate(180deg);
@@ -142,6 +142,7 @@
     @media only screen and (max-width: 380px) {
       main {
         flex-direction: column;
+        width: 85%;
       }
       .content{
         flex: 4;
@@ -171,6 +172,10 @@
       .artwork__image--middle {
         display: none;
       }
+
+      .content__header {
+        text-align: center;
+      }
     }
 
   </style>
@@ -194,7 +199,7 @@
       </picture>
     </section>
     <section class="content">
-      <h1 class="content__summary--highlight">FAQ</h1>
+      <h1 class="content__summary--highlight content__header">FAQ</h1>
       <div class="content--separator">
         <div class="content__info" id="content__info--invite" onclick="clickInvite('content__summary--invite', 'openInvite', 'content__info--invite', 'image__invite--rotate')"> 
           <p class="content__info--collapse">How many team members can I invite?</p><img src="./images/icon-arrow-down.svg" id="image__invite--rotate" class="content__info--click" alt="click to show more content" />
