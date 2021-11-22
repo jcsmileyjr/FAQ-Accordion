@@ -2,7 +2,7 @@
 
 ![Image of designs vs what was built](./images/final-artwork-total-1.png)
 
-This is a solution to the [FAQ Accordion component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [FAQ Accordion component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
